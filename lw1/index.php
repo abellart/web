@@ -3,11 +3,11 @@
 require('User.php');
 require('UserService.php');
 
-$users = array(
+$users = [
     new User('Яна', '123', '07/06/2015'),
     new User('Аня', '789', '01/01/2007'),
     new User('Катя', '456', '05/05/2007'),
-);
+];
 
 echo 'Сортировка по имени (А-Я)'.PHP_EOL;
 $usernameAscending = UserService::sortByUsername($users, true);
