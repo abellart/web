@@ -12,9 +12,9 @@ class BookController extends Controller
 {
     public function index(): View
     {
-    $books = Book::all();
+        $books = Book::all();
 
-    return view('books.index', compact('books'));    
+        return view('books.index', compact('books'));    
     }
 
     public function create(): View
@@ -49,6 +49,7 @@ class BookController extends Controller
     public function delete(Book $book)
     {
         $book->delete();
+        
         return redirect()->route('books.index')->with('success','Book has been deleted successfully');
     }
 }
