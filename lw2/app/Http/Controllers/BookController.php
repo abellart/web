@@ -46,10 +46,10 @@ class BookController extends Controller
         return view('books.show',compact('book'));   
     }
 
-    public function delete(Book $book)
+    public function delete(Book $book): RedirectResponse
     {
         $book->delete();
-        
+
         return redirect()->route('books.index')->with('success','Book has been deleted successfully');
     }
 }
