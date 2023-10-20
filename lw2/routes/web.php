@@ -25,4 +25,4 @@ Route::get('books/create', [BookController::class, 'create'])->name('books.creat
 Route::get('books/{book}/edit', [BookController::class, 'edit'])->name('books.edit');
 Route::put('books/{book}', [BookController::class, 'update'])->name('books.update');
 Route::get('books/{book}/show', [BookController::class, 'show'])->name('books.show');
-Route::post('books/{book}/delete', [BookController::class, 'delete'])->name('books.delete');
+Route::post('books/{book}', [BookController::class, 'destroy'])->name('books.destroy');
