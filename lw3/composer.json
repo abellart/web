@@ -1,0 +1,27 @@
+{
+    "name": "abellart/lw3",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Abellart\\Lw3\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Anna",
+            "email": "mail@mail.ru"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/abellart/PizzaStore.git"
+        }
+    ],
+    "require": {
+        "abellart/pizzastore": "dev-main"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10"
+    }
+}
